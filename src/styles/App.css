@@ -1,0 +1,18 @@
+#root {
+  padding: 0 15rem 0 15rem;
+  text-align: center;
+  background-color: #ece7e1a4
+}
+
+.navbar {
+  align-items: center;
+  padding-top: 1rem;
+}
+.navbar-logo {
+  height: 70px;
+}
+
+.div{
+  padding-bottom: 6rem;
+}
+
