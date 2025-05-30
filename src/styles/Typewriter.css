@@ -1,0 +1,25 @@
+.typewriter-wrapper {
+  display: inline-block;
+  position: relative;
+  min-width: 220px; /* opcional: asegura que no se mueva el texto */
+  text-align: left;
+}
+
+.typewriter-text {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  background-color:#167FBB;
+  width: 2px;
+  height: 1em;
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

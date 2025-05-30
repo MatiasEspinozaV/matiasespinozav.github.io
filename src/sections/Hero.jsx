@@ -7,34 +7,56 @@ import GitHub from '../assets/Github.png';
 import LinkedIn from '../assets/LinkedIn.png';
 import Gmail from '../assets/Gmail.png';
 import Whatsapp from '../assets/Whatsapp.png';
+import Typewriter from '../components/Typewriter';
+import ScrollAnimado from "../components/ScrollAnimado";
 
 
 export default function Hero() {
   return (
     <section className="portada">
-      <img src={fotoPerfil} alt="MatiasEspinozaV" className="fotoPerfil" />
-      <div className="textGrill">
-        <h1 className="tituloNombre">Hola!, soy <span className="h1Jinx">MatiasEspinozaV</span></h1>
-        <h1 className="tituloEspecialidad">Me Especializo en <span className="h1Jinx">Desarrollo Web</span></h1>
-        <img src={DivLk} alt="DivLk" className="divLk" />
-        <p className="mt-2 text-lg">Energetico, proactivo e insistente, son las cualidades que aplico en el dia a dia.
-Soy curioso a la hora de aprender e inquieto cuando se debe aplicar nuevas solucines o ideas para sacar a flote lo que me proponga. Siempre en busca del mejor momento para demostrar mis habilidades y aprender constantemente de toda situacion que se me proponga.</p>
-        <img src={DivLk} alt="DivLk" className="divLk" />
-        <div className="redesSociales">          
-          <a href="https://github.com/MatiasEspinozaV" target="_blank">
-            <img src={GitHub} alt="GitHub" className="RRSS" />
-            </a>
-          <a href="https://www.linkedin.com/in/matiasespinozav/" target="_blank">
-            <img src={LinkedIn} alt="LinkedIn" className="RRSS" />
-            </a>
-          <a href="https://github.com/MatiasEspinozaV" target="_blank">
-            <img src={Gmail} alt="Gmail" className="RRSS" />
-            </a>
-          <a href="https://github.com/MatiasEspinozaV" target="_blank">
-            <img src={Whatsapp} alt="Whatsapps" className="RRSS" />
-            </a>
+      <ScrollAnimado direction="left">
+        <img src={fotoPerfil} alt="MatiasEspinozaV" className="fotoPerfil" />
+      </ScrollAnimado>
+      <ScrollAnimado direction="right">
+        <div className="textGrill">
+          <h1 className="tituloNombre">Hola!, soy <span className="h1Jinx">MatiasEspinozaV</span></h1>
+          <h1 className="tituloEspecialidad">Me Especializo en <span className="h1Jinx"><Typewriter
+            words={["Aplicacion Web", "Frontend", "Backend", "Android"]}
+            speed={80}
+            pause={2000}
+          /></span></h1>
+          <img src={DivLk} alt="DivLk" className="divLk" />
+          <p className="mt-2 text-lg">Energetico, proactivo e insistente, son las cualidades que aplico en el dia a dia.
+  Soy curioso a la hora de aprender e inquieto cuando se debe aplicar nuevas solucines o ideas para sacar a flote lo que me proponga. Siempre en busca del mejor momento para demostrar mis habilidades y aprender constantemente de toda situacion que se me proponga.</p>
+          <img src={DivLk} alt="DivLk" className="divLk" />
+          <div className="redesSociales">
+                        <li style={{ "--i": "#333333", "--j": "#6e6e6e" }}>
+              <a href="https://github.com/MatiasEspinozaV" target="_blank">
+                <span className="icon"><ion-icon name="logo-github"></ion-icon></span>
+                <span className="title">GitHub</span>
+              </a>
+            </li>
+            <li style={{ "--i": "#0077B5", "--j": "#00A0DC" }}>
+              <a href="https://www.linkedin.com/in/matiasespinozav/" target="_blank">
+                <span className="icon"><ion-icon name="logo-linkedin"></ion-icon></span>
+                <span className="title">LinkedIn</span>
+              </a>
+            </li>
+            <li style={{ "--i": "#D44638", "--j": "#C1443B" }}>
+              <a href="mailto:matiasespinozav.lk@gmail.com" target="_blank">
+                <span className="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                <span className="title">Gmail</span>
+              </a>
+            </li>
+            <li style={{ "--i": "#25D366", "--j": "#128C7E" }}>
+              <a href="https://wa.me/56967388193" target="_blank">
+                <span className="icon"><ion-icon name="logo-whatsapp"></ion-icon></span>
+                <span className="title">WhatsApp</span>
+              </a>
+            </li>
+          </div>
         </div>
-      </div>
+      </ScrollAnimado>
     </section>
   );
 }

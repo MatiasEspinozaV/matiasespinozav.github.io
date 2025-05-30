@@ -1,4 +1,4 @@
-.card { perspective: 1000px; width: 250px; height: 300px; }
+.card { perspective: 1000px; width: 250px; height: 800px; }
 .card-inner {
   width: 100%; height: 100%;
   transition: transform 0.6s; transform-style: preserve-3d;

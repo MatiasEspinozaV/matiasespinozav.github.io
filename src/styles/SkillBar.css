@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Pixelify';
+    src: url('../assets/fonts/PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+.skill-bar {
+  width: 220px;
+  padding: 15px;
+  background-color: #f5f5f560;
+  border: 3px solid #383332;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.432);
+  transition: background 0.3s;
+}
+
+.skill-header {
+  display: flex;
+  align-items: end;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 3px;
+}
+
+.skill-icon {
+  width: 40px;
+  /*image-rendering: pixelated;*/
+}
+
+.skill-name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  border-color: black;
+}
+
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background-color: #11111167;
+  border: 2px solid #383332;
+  box-shadow: inset 1 0 0 2px rgba(51, 51, 51, 0.5)332;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+.skill-progress-text {
+  text-align: right;
+  font-family: 'Pixelify', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+/* Colores según nivel */
+.skill-bar.Experto .progress-fill {
+  background-color: #F5FF00;
+}
+
+.skill-bar.Avanzado .progress-fill {
+  background-color: #00CCFF;
+}
+
+.skill-bar.Intermedio .progress-fill {
+  background-color: #0070CC;
+}
+.skill-bar.Principiante .progress-fill {
+  background-color: #004277;
+}

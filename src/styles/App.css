@@ -1,7 +1,7 @@
 #root {
-  padding: 0 15rem 0 15rem;
+  padding: 0 13rem 0 13rem;
   text-align: center;
-  background-color: #ece7e1a4
+  background-color: #ece7e1a4;
 }
 
 .navbar {
@@ -13,6 +13,6 @@
 }
 
 .div{
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
 }
 

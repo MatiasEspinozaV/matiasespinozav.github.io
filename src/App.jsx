@@ -5,6 +5,7 @@ import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import './styles/App.css';
 import Nube from './assets/NubeJinx.png'
+import ScrollAnimado from './components/ScrollAnimado';
 
 function App() {
   return (
@@ -12,7 +13,6 @@ function App() {
       <header className="navbar">
         <img src={Nube} alt="Nube" className="navbar-logo"/>
       </header>
-      <div className='div'></div>
       <Hero />
       <div className='div'></div>
       <Skills />
