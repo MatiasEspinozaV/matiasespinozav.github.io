@@ -5,7 +5,6 @@ import Projects from './sections/Projects';
 import ContactForm from './sections/ContactForm';
 import './styles/App.css';
 import Nube from './assets/NubeJinx.png'
-import ScrollAnimado from './components/ScrollAnimado';
 
 function App() {
   return (
