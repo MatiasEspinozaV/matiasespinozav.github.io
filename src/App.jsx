@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Hero from './sections/Hero';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
-import Contact from './sections/Contact';
+import ContactForm from './sections/ContactForm';
 import './styles/App.css';
 import Nube from './assets/NubeJinx.png'
 import ScrollAnimado from './components/ScrollAnimado';
@@ -19,7 +19,12 @@ function App() {
       <div className='div'></div>
       <Projects />
       <div className='div'></div>
-      <Contact />
+      <ContactForm />
+      <a href='/'>
+        <footer className='footer'>
+          <img src={Nube} alt="Nube" className="footer-logo"/>
+        </footer>
+      </a>
     </div>
   );
 }

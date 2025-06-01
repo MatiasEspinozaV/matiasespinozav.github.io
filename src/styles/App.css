@@ -1,5 +1,4 @@
 #root {
-  padding: 0 13rem 0 13rem;
   text-align: center;
   background-color: #ece7e1a4;
 }
@@ -12,7 +11,42 @@
   height: 70px;
 }
 
+.footer {
+  align-items: center;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.789);
+}
+
+.footer-logo {
+  height: 70px;
+}
+
 .div{
   padding-bottom: 8rem;
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    align-items: center;
+    padding-top: 2rem;
+  } 
+
+  .navbar-logo {
+    height:   160px;
+  }
+
+  .div{
+  padding-bottom: 11rem;
+}
+
+.footer {
+    align-items: center;
+    padding-top: 2rem;
+  } 
+
+  .footer-logo {
+    height:   160px;
+  }
 }
 
