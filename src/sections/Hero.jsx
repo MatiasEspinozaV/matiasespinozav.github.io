@@ -1,4 +1,3 @@
-// src/sections/Hero.jsx
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import '../styles/Hero.css';
 import fotoPerfil from '../assets/MatiasEspinozaV.png';

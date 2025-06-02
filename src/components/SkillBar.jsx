@@ -1,4 +1,3 @@
-// SkillBar.jsx
 import React from "react";
 import "../styles/SkillBar.css";
 import { useEffect, useRef, useState } from 'react';
